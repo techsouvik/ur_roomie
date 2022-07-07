@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*----------------------------------------------fonts family--------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+/*----------------------------------------------nav bar------------------------------*/
+#nav-bar{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar{
+  background-image: linear-gradient(to right, #2D0B2B, #a517ba);
+  padding: 0 !important;
+}
+.navbar-brand img{
+  height: 50px;
+  padding-left: 25px;
+}
+.navbar-nav li{
+  padding: 0 10px;
+}
+.navbar-nav .nav-link{
+  font-family: 'Old Standard TT', serif;
+}
+.navbar-nav li a{
+  color: #fff !important;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+.fa-bars{
+  color: #fff;
+  font-size: 30px !important;
+}
+.navbar-toggler{
+  outline: none !important;
+}
+/*-----------------------------------banner section-----------------------------*/
+#banner{
+  background-image: linear-gradient(to right, #2D0B2B, #a517ba);
+  color: #fff;
+  padding-top: 5%;
+}
+.tag{
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.content{
+  font-family: 'Alex Brush', cursive;
+  font-size: 18px;
+  font-style: italic;;
+}
+.bottom-img{
+  width: 100%;
+  color:#ffe0fc;
+}
+#banner .btn{
+  color: #ffe0fc;
+  border: 2px solid #ffe0fc;
+}
+/*-----------------------------------services section-------------------------*/
+#services{
+  padding: 80px 0;
+}
+.service-img{
+  width: 70%;
+  height: 40%;
+  margin-top: 20px;
+  border-spacing: 2px;
+  border: 2px solid #000;
+  border-radius: 10%;
+}
+.services{
+  padding: 20px;
+}
+.services h4{
+  padding: 5px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+#services .btn{
+  border: 2px solid #ffe0fc;
+  padding: 8px 25px;
+  border-radius: 20px;
+  color: #fff;
+  background-image: linear-gradient(to right, #2D0B2B, #a517ba);
+}
+.title{
+  font-family: 'Playfair Display', serif;
+}
+/*-----------------------------------blog section-------------------------*/
+#blogs{
+  margin: 100px 0;
+}
+.blogs{
+  border-left: 4px solid #7b1798;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blogs img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.user-details{
+  display: inline-block;
+  font-size: 12px;
+}
+/*-----------------------------------social media section-------------------------*/
+#social-media{
+  background-color: #f8f9fa;
+  padding:100px 0;
+}
+#social-media p{
+  font-family: 'Old Standard TT', serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.social-icons img{
+  width: 60px;
+  transition: 0.5s;
+}
+.social-icons a:hover img{
+  transform: translateY(-10px);
+}
+/*-----------------------------------footer section-------------------------*/
+#footer{
+  background-image: linear-gradient(to right, #2D0B2B, #a517ba);
+  color: #fff;
+}
+.footer-img{
+  width: 100%;
+}
+.footer-box{
+  padding: 20px;
+}
+.footer-box img{
+  width: 120px;
+  margin: 20px;
+}
+.footer-box {
+  padding: 20px;
+}
+.footer-box img{
+  width: 250px;
+  margin-bottom: 10px;
+  margin-top: -50px;
+}
+.footer-box .fa-solid {
+  margin-right: 8px;
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 2px;
+  background-image: linear-gradient(to right, #2D0B2B, #a517ba);
+}
+.footer-box p{
+  text-align: left;
+  font-family: 'Alex Brush', cursive;
+  font-size: 20px;
+}
+.footer-box .name{
+  font-size: 50px;
+  text-align: left;
+  margin-left: 50px;
+}
+hr{
+  background-color: #fff;
+  height: 5px;
+}
+.copyright{
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+/*----------------------------------------register form section--------------------------*/
+.register-body{
+  background: #f8f9fa;
+}
+#form-fill{
+  padding: 80px 0;
+}
+#form-fill .container{
+  background-image: linear-gradient(to right, #2D0B2B, #a517ba);
+  }
+  #form-fill h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  }
+.form-container{
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'Old Standard TT', serif;
+  color: #fff;
+}
+/*-----------------------------------conditional form fill up -------------------------*/
+.control:checked ~ .conditional,
+			#1r1p:checked ~ .conditional,
+			#yes:checked ~ .conditional {
+				clip: auto;
+				height: auto;
+				margin: 0;
+				overflow: visible;
+				position: static;
+				width: auto;
+			}
+.control:not(:checked) ~ .conditional,
+			#no:not(:checked) ~ .conditional
+      {
+				border: 0;
+				clip: rect(0 0 0 0);
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+				padding: 0;
+				position: absolute;
+				width: 1px;
+			}
+.design{
+  align-items:baseline;
+}
