@@ -1,0 +1,31 @@
+{
+  "name": "ur_roomie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "smooth-scroll.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snehashis-Dhibar/Ur_Roomie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Snehashis-Dhibar/Ur_Roomie/issues"
+  },
+  "homepage": "https://github.com/Snehashis-Dhibar/Ur_Roomie#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

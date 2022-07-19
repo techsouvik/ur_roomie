@@ -42,23 +42,23 @@
         <div class="container">
           <h1 class="text-center">Details Form</h1>
           <div class="form-container">
-            <form class="row g-3">
+            <form class="row g-3" method="post" action="/register.html">
               <div class="col-md-4">
                 <label for="validationCustom01" class="form-label">Owner First name</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
+                <input type="text" class="form-control" name="fname" id="validationCustom01" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Owner Last name</label>
+                <label for="validationCustom02" name="lname" class="form-label">Owner Last name</label>
                 <input type="text" class="form-control" id="validationCustom02" required>
                 <div class="valid-feedback">
                   Looks good!
                 </div>
               </div>
               <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Accommodation Name</label>
+                <label for="validationCustomUsername" name="accomodation" class="form-label">Accommodation Name</label>
                 <div class="input-group has-validation">
                   <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                   <div class="invalid-feedback">
@@ -68,45 +68,45 @@
               </div>
               <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="email" name="mail_id" class="form-control" id="inputEmail4">
               </div>
               <div class="col-md-6">
                 <label for="inputPhone4" class="form-label">Phone</label>
-                <input type="phone" class="form-control" id="inputPhone4">
+                <input type="phone" name="ph_no" class="form-control" id="inputPhone4">
               </div>
               <div class="col-12">
                 <label for="inputAddress" class="form-label">Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <input type="text" name="address" class="form-control" id="inputAddress" placeholder="1234 Main St">
               </div>
               <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity">
+                <label for="inputCity" class="form-label" >City</label>
+                <input type="text" class="form-control" id="inputCity" name="city">
               </div>
               <div class="col-md-4">
                 <label for="inputLandmark" class="form-label">Land Mark</label>
-                <input type="text" class="form-control" id="inputLandmark">
+                <input type="text" name="landmark" class="form-control" id="inputLandmark">
               </div>
               <div class="col-md-2">
                 <label for="inputPin" class="form-label">Pin Code</label>
-                <input type="text" class="form-control" id="inputPin">
+                <input type="text" class="form-control" name="pincode" id="inputPin">
               </div>
               <div class="col-12">
                 <div class="input-group">
                   <span class="input-group-text">About Accommodation</span>
-                  <textarea class="form-control" aria-label="With textarea" placeholder="write about the accommodation"></textarea>
+                  <textarea class="form-control" aria-label="With textarea" name="about" placeholder="write about the accommodation"></textarea>
                 </div>
               </div>
               <div class="col-md-4">
                 <label for="inputRooms" class="form-label">Total Rooms</label>
-                <input type="number" class="form-control" id="inputRooms">
+                <input type="number" class="form-control" name="trooms" id="inputRooms">
               </div>
               <div class="col-md-4">
                 <label for="inputCap" class="form-label">Total Capacity</label>
-                <input type="number" class="form-control" id="inputCap">
+                <input type="number" class="form-control" name="tcapacity" id="inputCap">
               </div>
               <div class="col-md-4">
                 <label for="accommodation" class="form-label">Type Of Accommodation</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" name="types_accomodation">
                   <option value="1">Mess (with food)</option>
                   <option value="2">Mess (without food)</option>
                   <option value="3">PG (with food)</option>
@@ -117,7 +117,7 @@
               </div>
               <div class="col-md-4">
                 <label for="tenants" class="form-label">Preferred Tenants</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" name="preference">
                   <option value="1">Engineering</option>
                   <option value="2">Medical</option>
                   <option value="3">General Degree</option>
@@ -125,7 +125,7 @@
               </div>
               <div class="col-md-4">
                 <label for="gender" class="form-label">Preferred Gender</label>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select" aria-label="Default select example" name="prefered_gender">
                   <option value="1">Boys Only</option>
                   <option value="2">Girls Only</option>
                   <option value="3">Both</option>
@@ -257,52 +257,52 @@
                 </div>
                 <div class="col-md-6">
                   <label for="total_no" class="form-label">Total</label>
-                  <input type="text" placeholder="If the price break is NO" class="form-control" id="total_no">
+                  <input type="text" placeholder="If the price break is NO" class="form-control" id="total_no" name="total">
                 </div>
               </div>
               <!--Facilities------------------------------------------>
               <div class="col-md-3">
                 <label for="hospital" class="form-label">Nearest Hospital</label>
-                <input type="text" class="form-control" id="hospital" placeholder="Name of the hospital">
+                <input type="text" class="form-control" id="hospital" placeholder="Name of the hospital" name="n_hospital">
                 <br>
-                <input type="number" class="form-control" id="hos_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="hos_dist" placeholder="Distance in(km)" name="n_hospital_d">
               </div>
               <div class="col-md-3">
                 <label for="pharma" class="form-label">Nearest Pharma shop</label>
-                <input type="text" class="form-control" id="pharma" placeholder="Name of the pharma shop">
+                <input type="text" class="form-control" id="pharma" placeholder="Name of the pharma shop" name="n_pharma">
                 <br>
-                <input type="number" class="form-control" id="pharma_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="pharma_dist" placeholder="Distance in(km)" name="n_pharma_d">
               </div>
               <div class="col-md-3">
                 <label for="clinic" class="form-label">Nearest Clinic</label>
-                <input type="text" class="form-control" id="clinic" placeholder="Name of the Clinic">
+                <input type="text" class="form-control" id="clinic" placeholder="Name of the Clinic" name="n_clinic">
                 <br>
-                <input type="number" class="form-control" id="clinic_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="clinic_dist" placeholder="Distance in(km)" name="n_clinic_d">
               </div>
               <div class="col-md-3">
                 <label for="market" class="form-label">Nearest MarketPlace</label>
-                <input type="text" class="form-control" id="market" placeholder="Name of the MarletPlace">
+                <input type="text" class="form-control" id="market" placeholder="Name of the MarletPlace" name="n_market">
                 <br>
-                <input type="number" class="form-control" id="market_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="market_dist" placeholder="Distance in(km)" name="n_market_d">
               </div>
               <!--institutes--------------------------------------------->
               <div class="col-md-4">
                 <label for="insti1" class="form-label">Nearest Institute 1</label>
-                <input type="text" class="form-control" id="insti1" placeholder="Name of the Institute">
+                <input type="text" class="form-control" id="insti1" placeholder="Name of the Institute" name="n_institutes1">
                 <br>
-                <input type="number" class="form-control" id="insti1_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="insti1_dist" placeholder="Distance in(km)" name="n_institutes1_d">
               </div>
               <div class="col-md-4">
                 <label for="insti2" class="form-label">Nearest Institute 2</label>
-                <input type="text" class="form-control" id="insti2" placeholder="Name of the Institute">
+                <input type="text" class="form-control" id="insti2" placeholder="Name of the Institute" name="n_institutes2">
                 <br>
-                <input type="number" class="form-control" id="insti2_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="insti2_dist" placeholder="Distance in(km)" name="n_institutes2_d">
               </div>
               <div class="col-md-4">
                 <label for="insti3" class="form-label">Nearest Institute 3</label>
-                <input type="text" class="form-control" id="insti3" placeholder="Name of the Institute">
+                <input type="text" class="form-control" id="insti3" placeholder="Name of the Institute" name="n_institutes3">
                 <br>
-                <input type="number" class="form-control" id="insti3_dist" placeholder="Distance in(km)">
+                <input type="number" class="form-control" id="insti3_dist" placeholder="Distance in(km)" name="n_institutes3_d">
               </div>
               <!--Terms n conditions------------------------------------->
               <div class="col-12">
@@ -317,7 +317,7 @@
                 </div>
               </div>
               <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary">Register Now</button>
+                <input type="submit" class="btn btn-primary" value="Register">
               </div>
             </form>
           </div>
